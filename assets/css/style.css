@@ -1,0 +1,213 @@
+*{margin:0 auto;padding:0;}
+body
+{
+background-image:url(../images/wall-3185104_1920.jpg);
+margin:0px auto;
+font: .9em Verdana;
+color:#036;
+width:100%;
+height:100%;
+}
+
+/************ HEADER ************/
+header
+{
+clear:both;
+width:100%;
+height: 100px;
+background: white;
+border-bottom: #7bb38d;
+border-bottom-style: solid;
+}
+header h1 {
+	font-size: 50px;
+	font-family: 'Yellowtail', cursive;
+	text-align: center;
+	padding-top: 4px;
+	-webkit-animation:colorchange 20s infinite alternate;
+}
+
+/************ NAVIGATION ************/
+ul {
+    list-style-type: none;
+    margin: 0;
+	padding: 0;
+	
+}
+.navbar{
+	float: right;
+}
+li {
+	display: inline;
+
+	
+}
+a
+{
+ font: 1.1em Verdana;
+ text-decoration:none;
+ width: 100%;
+ color: #73816a;
+ padding:10px;
+}
+a:hover
+{
+ text-decoration:none;
+ color:#FFF;
+ background:#badabf;
+ 
+}
+
+
+/************ Section ************/
+section {
+	clear: both;
+	float: left;
+	width: 750px;
+	margin-top: 50px;
+	margin-left: 25%;
+	margin-right:25%;
+	background: white;
+	padding: 10px;
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+.img{
+	float:left;
+	padding: 10px;
+}
+.maintxt {
+	line-height: 25px;
+}
+/************ Contact ************/
+form{
+	padding-top: 30px;
+}
+label{
+	display: inline-block;
+	clear: both;
+
+	width:100px;
+	text-align:left;
+	margin-bottom:10px;
+	
+}
+input {
+  display: inline-block;
+
+  margin-bottom:10px;
+
+}
+.textinput
+{
+	width: 95%;
+	
+}
+textarea{
+	display: inline-block;
+
+  height: 150px;
+  width: 95%;
+	
+}
+#submit{
+	clear:both;
+	text-align:center;
+	margin-top: 5px;
+	float: left;
+	height: 50px;
+	width: 75px;
+	background: #7bb38d;
+	color: white;
+	
+}
+/************ Footer ************/
+footer{
+	clear: both;
+	width: 100%;
+	height: 40px;
+	background: #7bb38d;
+	position:fixed;
+	bottom: 0;
+	padding-top: 10px;
+	text-align: center;
+}
+
+/* The animation code */
+@-webkit-keyframes colorchange {
+    from {color: #00a86b;}
+    to {color: #036}
+}
+
+
+/************ Media Queries/Responsive ************/
+
+/*Desktop*/
+
+@media only screen and (max-width: 980px) {
+section {
+	width: 500px;
+	margin-left: 10%;
+}
+.img{
+	width:40%
+}
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+
+	.navbar{
+		clear: right;
+		float: left;
+		margin-left: 30%;
+		margin-right: 30%;
+		margin-top:5px;
+		
+	
+	}
+	header{
+		height: 75px;
+	}
+	header h1 {
+		background: #7bb38d;
+		font-size: 30px;
+	}
+	.img{
+		width: 40%;
+	}
+
+}
+
+/*Cellphone*/
+@media only screen and (max-width: 640px) {
+	section{
+		width: 450px;
+	}
+.navbar{
+	clear: right;
+	float: left;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top:5px;
+
+}
+header{
+	height: 75px;
+	position: static;
+}
+header h1 {
+	background: #7bb38d;
+	font-size: 30px;
+}
+.img{
+	clear: left;
+	width: 60%;
+	margin-left: 15%;
+}
+.maintxt{
+	margin-top: 65%;
+}
+
+
+}
